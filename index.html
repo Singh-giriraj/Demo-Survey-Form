@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./style.css" />
+  <title>Gamer's Survey Form</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Demo survey Form</h1>
+    <p id="description">Hello Gamers!!!</p>
+  </header>
+  <section class="container">
+      <form name="survey-form" id="survey-form" method="post">
+        <div class="form-field">
+          <label for="name" id="name-label">Name
+            <input class="fill" id="name" type="text" placeholder="eg. Giyu" required />
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="email" id="email-label">Email
+            <input id="email" class="fill" type="email" placeholder="eg. email@domain.com" required validate /></label>
+        </div>
+        <div class="form-field">
+          <label for="number" id="number-label">Age<span>(optional)</span>
+            <input id="number" class="fill" type="number" min="10" max="80" placeholder="btw 10-80" validate required />
+          </label>
+        </div>
+        <div class="form-field">
+          <p>which gaming console do you like?</p>
+          <select id="dropdown" class="fill" name="gaming-console">
+            <option disabled selected value>select one option</option>
+            <option value="ps5">PlayStation 5</option>
+            <option value="xbox5">Xbox 5</option>
+            <option value="nintendo">Nintendo</option>
+          </select>
+        </div>
+
+        <div class="form-field form-options">
+          <p>can you buy any of these products?</p>
+          <label for="buy-yes"><input class="input-radio" type="radio" id="buy-yes" name="can-buy" value="yes" />Yes</label>
+          <label for="buy-maybe"><input class="input-radio" type="radio" id="buy-maybe" name="can-buy" value="maybe" />Maybe</label>
+          <label for="buy-no"><input class="input-radio" type="radio" id="buy-no" name="can-buy" value="no" />No</label>
+        </div>
+        <div class="form-field form-options">
+          <p>
+            what games would you love to have in your collection?
+            <span>(select all that apply!)</span>
+          </p>
+          <label for="cod"><input class="input-checkbox" type="checkbox" name="games" id="cod" value="cod" />Call Of Duty</label>
+          <label for="dakkar"><input class="input-checkbox" type="checkbox" name="games" id="dakkar" value="dakkar" />Dakkar Rally</label>
+          <label for="gt"><input class="input-checkbox" type="checkbox" name="games" id="gt" value="gt" />Grand Tourismo</label>
+          <div class="form-field">
+            <p>what are your thoughts on VR gaming?</p>
+            <textarea name="answer" placeholder="enter your answer here..."></textarea>
+            <div class="submit-button">
+              <button type="button" id="submit" target="_blank">-- Submit --</button>
+            </div>
+      </form>
+  </section>
+  <div class="circle1"></div>
+</body>
+</html>
